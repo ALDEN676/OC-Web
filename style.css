@@ -500,8 +500,14 @@ input[type="color"]::-moz-color-swatch {
         print-color-adjust: exact;
     }
 
+    .pickedTag{
+        color: #000000;
+    }
     
-    
+    .logohome{
+        color: #000000;
+    }
+
 
     .dropbox,
     .dropboxPicker,
@@ -527,8 +533,8 @@ input[type="color"]::-moz-color-swatch {
 
     .added-item {
         background: #f1f5f9 !important;
-        color: #0f172a !important;
-        border: 1px solid #cbd5e1;
+        color: #000000 !important;
+        border: none;
     }
 
     .MC{
