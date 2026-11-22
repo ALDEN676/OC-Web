@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- title -->
+        <title>OCC Studios</title>
+
+        <!-- icon -->
+
+
+        <!-- css -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <!-- js -->
+        <script src="script.js" defer></script>
+
+        <!-- fit browser --> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    
+    <body>
+        <nav>
+            <div class="navBar">
+                <!-- nav 3 line -->
+                <span onclick="OpensideNav()" style="font-size:30px;cursor:pointer">
+                    <div class="nav3line" >
+                        <div class="navlinecotain"><div class="navline"></div></div>
+                        <div class="navlinecotain"><div class="navline"></div></div>
+                        <div class="navlinecotain"><div class="navline"></div></div>
+                    </div>  
+                </span>
+                <!-- Sidenav -->
+                <div class="sideNav" id="sideNavJ">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+                    <a href="myproject.html">my project</a>
+                    <a href="mycharacter.html">my character</a>
+                </div>
+                
+                <div class="logoSpace"></div>
+                <!-- logo -->
+                <a class="logohome" href="index.html">OCC Studios</a>
+                <div class="navBTN"></div>
+            </div>
+        </nav>
+
+        <div class="textBody">
+            <div class="qInput">Name</div>
+            <div class="Input">
+                <input type="text" class="ocName" placeholder="First name">
+                <input type="text" class="ocName" placeholder="Middle name">
+                <input type="text" class="ocName" placeholder="Last name">
+                <input type="text" class="information" placeholder="Nickname">
+            </div>
+
+            <div class="qInput">basic appearance</div>
+            <div class="Input">
+                <input type="text" class="basic" placeholder="Gender">
+                <input type="text" class="basic" placeholder="Pronouns">
+                <input type="text" class="basic" placeholder="Species">
+                <input type="date" class="basic" min="01-01-0000" max="31-12-9999">
+                <div class="height">
+                    <input type="number" class="basicHeight" min="0" max="400" placeholder="Height">
+                    <span class="unit">
+                        <select class="cmselect">
+                            <option value="cm">cm</option>
+                            <option value="ft">ft</option>
+                        </select>
+                    </span>
+                </div>
+                
+                
+                <div class="colortext">skin color</div>
+                <div class="colorBox">
+                    <input type="color" class="colorbox">
+                    <input type="color" class="colorbox">
+                    <input type="color" class="colorbox">
+                </div>
+
+                <div class="colortext">hair color</div>
+                <div class="colorBox">
+                    <input type="color" class="colorbox">
+                    <input type="color" class="colorbox">
+                    <input type="color" class="colorbox">
+                </div>
+
+                <div class="colortext">eyes color</div>
+                <div class="colorBox">
+                    <input type="color" class="colorbox">
+                    <input type="color" class="colorbox">
+                    <input type="color" class="colorbox">
+                </div>
+            </div>
+
+            <div class="qInput">Distinguishing Features</div>
+            <div class="Input">
+                <div class="selectedTag"></div>
+                <details class="dropbox" data-single="true">
+                    
+                    <summary class="dropboxTitle">Body Type</summary>
+                    <div class="dropboxPicker">
+                        <button type="button" class="tagOption" data-tag="Ectomorph">Ectomorph</button>
+                        <button type="button" class="tagOption" data-tag="Mesomorph">Mesomorph</button>
+                        <button type="button" class="tagOption" data-tag="Endomorph">Endomorph</button>
+                        <button type="button" class="tagOption" data-tag="2">2</button>
+                        <button type="button" class="tagOption" data-tag="2">2</button>
+                    </div>
+                </details>
+            </div>
+
+            <div class="qInput">Personality & Psychology</div>
+            <div class="Input">
+                <div class="popBox">
+                    <div class="pop"></div>
+                </div>
+                <input type="text" class="information" placeholder="Positive Traits">
+
+                <div class="popBox">
+                    <div class="pop"></div>
+                </div>
+                <input type="text" class="information" placeholder="Flawa & Weaknesses">
+                
+
+                <div class="popBox">
+                    <div class="pop"></div>
+                </div>
+                <input type="text" class="information" placeholder="Likes">
+
+                <div class="popBox">
+                    <div class="pop"></div>
+                </div>
+                <input type="text" class="information" placeholder="Dislikes">
+
+                <div class="popBox">
+                    <div class="pop"></div>
+                </div>
+                <input type="text" class="information" placeholder="Mannerisms">
+
+                <div class="popBox">
+                    <div class="pop"></div>
+                </div>
+                <input type="text" class="information" placeholder="Habits">
+                
+            </div>
+
+            <div class="qInput">Skills & Abilities</div>
+
+            <div class="Input">
+                <div class="popBox">
+                    <div class="pop"></div>
+                </div>
+                <input type="text" class="information" placeholder="Strengths">
+
+                <div class="popBox">
+                    <div class="pop"></div>
+                </div>
+                <input type="text" class="information" placeholder="Power">
+            </div>
+
+            <div class="qInput">Relationships</div>
+            <div class="Input">
+                <div class="popBox">
+                    <div class="pop">
+                        <div class="pop"></div>
+                    </div>
+                </div>
+                <input type="text" class="information" placeholder="moms' names">
+
+                <div class="popBox">
+                    <div class="pop">
+                        <div class="pop"></div>
+                    </div>
+                </div>
+                <input type="text" class="information" placeholder="dads' names">
+
+                <div class="popBox">
+                    <div class="pop">
+                        <div class="pop"></div>
+                    </div>
+                </div>
+                <input type="text" class="information" placeholder="siblings' names">
+
+                <div class="popBox">
+                    <div class="pop">
+                        <div class="pop"></div>
+                    </div>
+                </div>
+                <input type="text" class="information" placeholder="friends' names">
+                    
+  
+            </div>
+
+            <div class="qInput">Backstory & Motivation</div>
+            <div class="Input">
+                <input type="text" class="backstory" placeholder="Backstory">
+                <input type="text" class="basic" placeholder="Address">
+                <input type="text" class="basic" placeholder="Birthplace">
+                
+            </div>
+            
+            <div class="qInput">Meta / World Info</div>
+            <div class="Input">
+                <input type="text" class="basic" placeholder="Universe">
+                <div class="selectedTag"></div>
+                <details class="dropbox" data-single="true">
+                    
+                    <summary class="dropboxTitle">MBTI</summary>
+                    <div class="dropboxPicker">
+                        <button type="button" class="tagOption" data-tag="INTJ">INTJ</button>
+                        <button type="button" class="tagOption" data-tag="INTP">INTP</button>
+                        <button type="button" class="tagOption" data-tag="ENTJ">ENTJ</button>
+                        <button type="button" class="tagOption" data-tag="ENTP">ENTP</button>
+                        <button type="button" class="tagOption" data-tag="ISTJ">ISTJ</button>
+                        <button type="button" class="tagOption" data-tag="ISFJ">ISFJ</button>
+                        <button type="button" class="tagOption" data-tag="ESTJ">ESTJ</button>
+                        <button type="button" class="tagOption" data-tag="ESFJ">ESFJ</button>
+                        <button type="button" class="tagOption" data-tag="ISFP">ISFP</button>
+                        <button type="button" class="tagOption" data-tag="ISTP">ISTP</button>
+                        <button type="button" class="tagOption" data-tag="ESFP">ESFP</button>
+                        <button type="button" class="tagOption" data-tag="ESTP">ESTP</button>
+                        <button type="button" class="tagOption" data-tag="INFT">INFT</button>
+                        <button type="button" class="tagOption" data-tag="INFP">INFP</button>
+                        <button type="button" class="tagOption" data-tag="ENFP">ENFP</button>
+                        <button type="button" class="tagOption" data-tag="ENFJ">ENFJ</button>
+
+                    </div>
+                </details>
+            </div>
+
+
+            <div class="qInput">Visuals & Aesthetics</div>
+            <div class="Input">
+                <div class="qtext">Character Reference</div>
+                <div class="Input oc-upload-box">
+                    <input type="file" class="oc-img-input" accept="image/*" multiple>
+                    <div class="oc-img-gallery"></div>
+                </div>
+
+                <div class="qtext">Outfits & Aesthetic</div>
+                <div class="Input oc-upload-box">
+                    <input type="file" class="oc-img-input" accept="image/*" multiple>
+                    <div class="oc-img-gallery"></div>
+                </div>
+
+                <div class="qtext">Character Color</div>
+                <div class="OCcolorbox">
+                    <input type="color" class="ocColor">
+                    <input type="color" class="ocColor">
+                    <input type="color" class="ocColor">
+                </div>
+                <div class="OCcolorbox">
+                    <input type="color" class="ocColor">
+                    <input type="color" class="ocColor">
+                    <input type="color" class="ocColor">
+                </div>
+            </div>
+
+
+            <div class="Cbtn">
+                <div class="savebtn">
+                    <button class="save">Save To My Character</button>
+                </div>
+
+                <div class="expobtn">
+                    <button class="expo">.PDF</button>
+                </div>
+                <div class="MCbtn">
+                    <a class="MC" href="mycharacter.html">Go to My Character</a>
+                </div>
+                
+            </div>
+
+            
+
+        </div>
+        <footer>
+            <div class="footer">
+            </div>
+        </footer>
+    </body>
+</html>
