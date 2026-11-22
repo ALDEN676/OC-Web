@@ -44,7 +44,7 @@ document.querySelectorAll(".oc-upload-box").forEach((box) => {
 
 
 //Name keydown
-const NameInputs = document.querySelectorAll(".ocName, .basic");
+const NameInputs = document.querySelectorAll(".ocName, .basic, .basicHeight");
 NameInputs.forEach(input => {
     input.addEventListener('keydown', function(event) {
         if (event.key === 'Enter' && input.value.trim() !== '') {
