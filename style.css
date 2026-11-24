@@ -284,6 +284,14 @@ textarea {
     font-weight: bold;
 }
 
+/* birthday */
+.BD{
+    display: flex;
+    
+}
+.bdText{
+    margin-right: 4px;
+}
 /* height */
 .height{
     display: inline-flex;
@@ -507,7 +515,7 @@ input[type="date"]::-webkit-inner-spin-button {
         display: inline !important;
     }
     
-    input:not(.ocColor, .colorbox), button, .expo {
+    input:not(.ocColor, .colorbox, .bdText), button, .expo {
         display: none !important;
     }
 
@@ -606,6 +614,13 @@ input[type="date"]::-webkit-inner-spin-button {
 }
 
 /* html card holder */
+
+#searchInput{
+    border: 0;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .char-card {
     background: #1e293b;
     border: 1px solid #334155;
@@ -624,7 +639,7 @@ input[type="date"]::-webkit-inner-spin-button {
 .char-name-btn {
     background: none;
     border: none;
-    color: #38bdf8;
+    color: #ffffff;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 0;
@@ -633,7 +648,7 @@ input[type="date"]::-webkit-inner-spin-button {
 }
 
 .char-name-btn:hover {
-    color: white;
+    color: rgb(175, 175, 175);
 }
 
 .char-details {

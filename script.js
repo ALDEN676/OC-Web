@@ -404,9 +404,18 @@ function renderCharacters(filterText = '') {
 
     characterList.innerHTML = filtered.map(char => {
         const tags = (char.details || [])
-            .map(detail => `<span class="tag">${detail}</span>`)
+            .map(detail => {
+                const str = String(detail);
+                const hexMatch = str.match (/#[0-9a-fA-F]{3,8}\b/);
+
+                if (hexMatch){
+                    const hex = hexMatch[0];
+                }
+            })
             .join('');
 
+        
+            
         return `
             <article class="char-card" data-id="${char.id}">
                 <div class="card-header">
@@ -416,7 +425,7 @@ function renderCharacters(filterText = '') {
                     <button class="delete-btn" onclick="deleteCharacter(${char.id})">Delete</button>
                 </div>
                 <div class="char-details">
-                    <div class="tags">${tags || '<span>No details saved.</span>'}</div>
+                    <div class="tags">${tags || '<span style="color:white;" >No details saved.</span>'}</div>
                 </div>
             </article>
         `;
