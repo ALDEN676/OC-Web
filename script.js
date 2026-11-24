@@ -294,6 +294,8 @@ window.addEventListener('beforeprint', () => {
         swatch.className = 'print-swatch';
         swatch.style.backgroundColor = picker.value;
         picker.insertAdjacentElement('afterend', swatch);
+
+        
     });
 });
 
@@ -364,7 +366,6 @@ function showSavedMessage(message = 'Character saved!') {
 }
 
 // html page
-
 const characterList = document.getElementById('characterList');
     const searchInput = document.getElementById('searchInput');
     let characters = JSON.parse(localStorage.getItem('ocCharacters') || '[]');

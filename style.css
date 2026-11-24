@@ -270,6 +270,11 @@ textarea {
     color: white;
 }
 
+.tagOption:hover,
+.pickedTag:hover{
+    background-color: #4d6585;
+    color: white;
+}
 .removeTagBtn {
     border: none;
     background: transparent;
@@ -361,7 +366,7 @@ input[type="color"]::-moz-color-swatch {
 /* tag box */
 
 .added-item {
-    background-color: #334155;
+    background-color: #314B6E;
     color: #f8fafc;
     padding: 4px ;
     border-radius: 6px;
@@ -369,7 +374,7 @@ input[type="color"]::-moz-color-swatch {
 }
 
 .added-item:hover {
-    background-color: #475569;
+    background-color: #4d6585;
 }
 
 .popBox{
@@ -380,6 +385,21 @@ input[type="color"]::-moz-color-swatch {
 }
 
 
+/* date */
+/* chorm */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none !important;
+    -webkit-appearance: none !important;
+}
+
+
+
+/* Firefox */
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button {
+    display: none !important;
+    -webkit-appearance: none !important;
+}
 
 /* btn */
 .Cbtn {
@@ -487,8 +507,16 @@ input[type="color"]::-moz-color-swatch {
         display: inline !important;
     }
     
-    input:not(.ocColor, .colorbox ), button, .expo {
+    input:not(.ocColor, .colorbox), button, .expo {
         display: none !important;
+    }
+
+    summary,
+    .dropboxTitle{
+        display: block !important;
+        visibility: visible !important;
+        border: 0;
+        color: #000000;
     }
 
 
